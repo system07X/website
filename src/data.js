@@ -12,13 +12,6 @@ export const EXTRAS = [
 export const MENUS = [
   { id: 'sp', price: 750, name: ['Spansk inspirasjon', 'Spanish inspiration'], starter: ['Pan con tomate', 'Pan con tomate'], main: ['Kyllingsupreme med potetmos, hvitløk, chorizo & paprika', 'Chicken Supreme with potato purée, garlic, chorizo & paprika'], dessert: ['Appelsin med kanel', 'Orange with canel'] },
   { id: 'vege', price: 750, name: ['Vegetarianer', 'vegetarian'], starter: ['Tomatcarpaccio', 'Tomato Carpaccio'], main: ['aubergine og sopp curry', 'aubergine and mushrooms curry'], dessert: ['Armriddere & kandisert pære', 'Brioche French toast & candied pear'] },
-  { id: 'sea', price: 890, name: ['Havets gaver', 'Gifts of the sea'], starter: ['Kamskjell, blomkål', 'Scallops, cauliflower'], main: ['Torsk, brunt smør, erter', 'Cod, brown butter, peas'], dessert: ['Sitronterte', 'Lemon tart'] },
-  { id: 'veg', price: 690, name: ['Vegetar', 'Vegetarian'], starter: ['Rødbetcarpaccio, chèvre', 'Beetroot carpaccio, goat cheese'], main: ['Skogssopp-risotto', 'Wild mushroom risotto'], dessert: ['Eplekake, vaniljeis', 'Apple cake, vanilla ice cream'] },
-  { id: 'nordic', price: 820, name: ['Nordisk tradisjon', 'Nordic tradition'], starter: ['Gravet laks, sennepssaus', 'Cured salmon, mustard sauce'], main: ['Lammekølle, rotgrønnsaker', 'Leg of lamb, root vegetables'], dessert: ['Karamellpudding', 'Caramel pudding'] },
-  { id: 'it', price: 750, name: ['Italiensk aften', 'Italian evening'], starter: ['Burrata, tomat, basilikum', 'Burrata, tomato, basil'], main: ['Ravioli, ricotta og salvie', 'Ricotta & sage ravioli'], dessert: ['Tiramisu', 'Tiramisu'] },
-  { id: 'seafeast', price: 1090, name: ['Sjømatfest', 'Seafood feast'], starter: ['Skalldyrsuppe', 'Shellfish bisque'], main: ['Sjøtunge, hvitvinssaus', 'Sole, white wine sauce'], dessert: ['Pannacotta, bær', 'Panna cotta, berries'] },
-  { id: 'duck', price: 950, name: ['Andemeny', 'Duck menu'], starter: ['Andelever-terrin, brioche', 'Duck liver terrine, brioche'], main: ['Andebryst, appelsin', 'Duck breast, orange'], dessert: ['Sjokoladefondant', 'Chocolate fondant'] },
-  { id: 'vegan', price: 720, name: ['Vegansk', 'Vegan'], starter: ['Gazpacho, urter', 'Gazpacho, herbs'], main: ['Linsegryte, sesongens grønnsaker', 'Lentil stew, seasonal vegetables'], dessert: ['Sjokolademousse, bær', 'Chocolate mousse, berries'] },
 ]
 
 // Vos créations (galerie). Ajoutez des photos dans src/assets/creations/ : la 1re photo va avec le 1er plat, etc.
