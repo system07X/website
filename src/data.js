@@ -23,12 +23,9 @@ export const MENUS = [
 
 // Vos créations (galerie). Ajoutez des photos dans src/assets/creations/ : la 1re photo va avec le 1er plat, etc.
 export const DISHES = [
-  { emoji: '🦞', color: '#f3d9c9', name: ['Hummer, sitrus & smørsaus', 'Lobster, citrus & butter sauce'], tag: ['Forrett', 'Starter'] },
-  { emoji: '🥩', color: '#e5cfc0', name: ['Lam fra Norge, rotgrønnsaker', 'Norwegian lamb, root vegetables'], tag: ['Hovedrett', 'Main'] },
-  { emoji: '🐟', color: '#d8e4dc', name: ['Lakserøye, pepperrot & dill', 'Cured salmon, horseradish & dill'], tag: ['Forrett', 'Starter'] },
-  { emoji: '🍄', color: '#e6dcc6', name: ['Skogssopp-risotto', 'Wild mushroom risotto'], tag: ['Vegetar', 'Vegetarian'] },
-  { emoji: '🍓', color: '#f1d3d6', name: ['Jordbær, fløte & timian', 'Strawberries, cream & thyme'], tag: ['Dessert', 'Dessert'] },
-  { emoji: '🍫', color: '#d9cbc2', name: ['Mørk sjokolade & havsalt', 'Dark chocolate & sea salt'], tag: ['Dessert', 'Dessert'] },
+  { name: ['Rødbetgravet laks, agurk, rødbetchips, sitrus og pasjonsfrukt', 'Salmon Gravlax in Beetroot Cured, cucumber, beetroot chips, citrus & passion fruit'], tag: ['Forrett', 'Starter'] },
+  { name: ['Andebryst, potetmos og glasert gulrot', 'Duck breast, mashed potatoes, and glazed carrot'], tag: ['Hovedrett', 'Main'] },
+  { name: ['Sjokoladefondant og Crème Anglaise', 'Chocolate Fondant & Crème Anglaise'], tag: ['dessert', 'dessert'] },
 ]
 
 // Textes de l'interface (index 0 = norvégien, 1 = anglais)
