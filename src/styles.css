@@ -16,6 +16,7 @@ a{color:inherit}
 nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 22px;max-width:1000px;margin:0 auto}
 nav a{text-decoration:none;margin-left:16px;font-size:14px}
 nav button{background:none;border:1px solid var(--line);color:var(--fg);border-radius:20px;padding:4px 12px;cursor:pointer;margin-left:16px;font:inherit}
+.lang-switch{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:4px 12px}
 .logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600}
 section,header,footer{max-width:1000px;margin:0 auto;padding:56px 22px}
 header{text-align:center;padding:96px 22px 72px}

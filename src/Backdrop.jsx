@@ -18,7 +18,7 @@ function rng(a) {
 }
 
 function useDesktop() {
-  const [d, setD] = useState(() => window.matchMedia('(min-width:800px)').matches)
+  const [d, setD] = useState(false)
   useEffect(() => {
     const mq = window.matchMedia('(min-width:800px)')
     const on = () => setD(mq.matches)
