@@ -11,8 +11,8 @@ a{color:inherit}
 /* Fond : photos en quinconce */
 .bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:#1c1611}
 .bg::after{content:"";position:absolute;inset:0;background:rgba(18,13,9,.4);pointer-events:none}
-/* Marge autour des photos : le cadre rogne les images */
-.bg-in{position:absolute;inset:clamp(12px,3vw,36px);overflow:hidden;border-radius:6px}
+/* Marge autour des photos : les photos restent entières dans ce cadre */
+.bg-in{position:absolute;inset:clamp(12px,3vw,36px)}
 @media(min-width:800px){.bg-in{left:100px;right:100px}}
 .bg img,.bg i{position:absolute;object-fit:cover;display:block;border-radius:4px;box-shadow:0 10px 34px rgba(0,0,0,.55)}
 

@@ -37,10 +37,18 @@ export default function Backdrop() {
     const C = desktop ? [[12.5, 25], [62.5, 25], [37.5, 75], [87.5, 75]] : [[25, 12.5], [75, 37.5], [25, 62.5], [75, 87.5]]
     const cw = desktop ? 25 : 50, ch = desktop ? 50 : 25
     const fw = desktop ? 1.7 : 0.9, fh = desktop ? 0.9 : 1.7
-    return C.slice(0, n).map(([cx, cy], k) => {
+    const clamp = (v, max) => Math.min(Math.max(v, 0), max)
+    const t = C.slice(0, n).map(([cx, cy], k) => {
       const s = 0.85 + r() * 0.3, w = cw * fw * s, h = ch * fh * s
-      return { k, left: cx + (r() - 0.5) * 8 - w / 2 + '%', top: cy + (r() - 0.5) * 8 - h / 2 + '%', width: w + '%', height: h + '%' }
+      // chaque photo reste entière dans le cadre (pas de rognage)
+      return { k, w, h, left: clamp(cx + (r() - 0.5) * 8 - w / 2, 100 - w), top: clamp(cy + (r() - 0.5) * 8 - h / 2, 100 - h) }
     })
+    // la photo la plus à gauche s'aligne sur la marge gauche, la plus à droite sur la marge droite
+    const first = t.reduce((a, b) => (b.left < a.left ? b : a))
+    const last = t.reduce((a, b) => (b.left + b.w > a.left + a.w ? b : a))
+    first.left = 0
+    last.left = 100 - last.w
+    return t.map(({ k, w, h, left, top }) => ({ k, left: left + '%', top: top + '%', width: w + '%', height: h + '%' }))
   }, [desktop, n])
 
   return (
