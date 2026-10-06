@@ -10,10 +10,10 @@ a{color:inherit}
 
 /* Fond : photos en quinconce */
 .bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:#1c1611}
-.bg::after{content:"";position:absolute;inset:0;background:rgba(18,13,9,.4);pointer-events:none}
+.bg::after{content:"";position:absolute;inset:0;background:rgba(18,13,9,.55);pointer-events:none}
 /* Marge autour des photos : les photos restent entières dans ce cadre */
 .bg-in{position:absolute;inset:clamp(12px,3vw,36px)}
-@media(min-width:800px){.bg-in{left:100px;right:100px}}
+@media(min-width:800px){.bg-in{left:100px;right:100px;top:100px}}
 .bg img,.bg i{position:absolute;object-fit:cover;display:block;border-radius:4px;box-shadow:0 10px 34px rgba(0,0,0,.55)}
 
 nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 22px;max-width:1000px;margin:0 auto}
