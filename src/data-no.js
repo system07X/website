@@ -1,5 +1,25 @@
 import { BRAND, CONTACT_EMAIL } from './data.js'
 
+const aboutMe = `Jeg heter Mathis og er en fransk kokk bosatt i Oslo.
+
+Jeg vokste opp i nærheten av Nice, hvor matlaging handlet om gode råvarer, tydelige smaker og gleden ved å dele mat med andre. Reisen min har siden ført meg gjennom ulike kjøkken, fra Sør-Frankrike til Oslo, hvor jeg fikk muligheten til å jobbe på et japansk Omakase-kjøkken med Michelin-stjerne.
+
+Den erfaringen endret måten jeg ser på matlaging.
+
+Det japanske kjøkkenet lærte meg å sette pris på råvarene for det de faktisk er. Noen ganger er det beste du kan gjøre ganske enkelt å ikke komme i veien for dem. En fantastisk fisk, en sesongbasert grønnsak eller en god saus trenger ikke alltid ti andre elementer rundt seg.
+
+Samtidig har jeg aldri ønsket å legge bak meg generøsiteten og karakteren jeg vokste opp med gjennom fransk og middelhavsinspirert matlaging.
+
+Derfor leter jeg hele tiden etter balansen mellom de to.
+
+Nok teknikk til å skape noe spesielt.
+Nok enkelhet til å la råvarene få snakke for seg selv.
+Nok kreativitet til å gjøre hver rett til min egen.
+
+Det er dette jeg ønsker å bringe til mine private middager: gjennomtenkt mat, gode råvarer og menyer som føles raffinerte uten å bli kompliserte.
+
+For meg handler matlaging om å finne dette perfekte balansepunktet – mellom enkelhet og kreativitet, presisjon og intuisjon, tradisjon og nysgjerrighet.`;
+
 export { BRAND, CONTACT_EMAIL }
 
 export const EXTRAS = [
@@ -21,10 +41,11 @@ export const DISHES = [
 ]
 
 export const UI = {
-  navMenus: 'Menyer', navCreations: 'Kreasjoner', navHow: 'Slik fungerer det', navBook: 'Bestill',
+  navAbout: 'Om meg', navMenus: 'Menyer', navCreations: 'Kreasjoner', navHow: 'Slik fungerer det', navBook: 'Bestill',
   heroTitle: 'Et fransk preg på enhver anledning',
   heroText: 'Med utgangspunkt i franske mattradisjoner og erfaring fra gourmetrestauranter, komponerer jeg raffinerte, sesongbaserte menyer for private middager og spesielle anledninger - og tilfører hvert måltid håndverk på restaurantnivå, sans for detaljer og et personlig preg',
   heroCta: 'Send en forespørsel',
+  aboutTitle: 'Om meg', aboutText: aboutMe,
   menusTitle: 'Sesongen på tallerkenen | høsten 2026', menusSub: 'Omhyggelig sammensatte menyer, inspirert av de beste sesongråvarene, som bringer følelsen av en restaurantopplevelse hjem til deg',
   perPerson: 'kr / pers', choose: 'Velg denne menyen',
   creationsTitle: 'Mine kreasjoner',

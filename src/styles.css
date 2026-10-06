@@ -47,6 +47,18 @@ figcaption{padding:14px 16px}
 figcaption h3{font-size:22px}
 figcaption p{margin:4px 0 0;color:var(--mut);font-size:14px}
 
+.aboutme{max-width:720px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.aboutme summary{cursor:pointer;list-style:none;padding:18px 56px 18px 24px;display:flex;flex-direction:column;gap:2px;position:relative}
+.aboutme summary::-webkit-details-marker{display:none}
+.aboutme summary::after{content:"";position:absolute;right:26px;top:50%;width:10px;height:10px;border-right:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.aboutme[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.aboutme summary span{font:600 26px 'Cormorant Garamond',Georgia,serif}
+.aboutme summary em{color:var(--mut);font-size:14px}
+.aboutme-body{padding:0 24px 22px;animation:aboutIn .3s ease}
+.aboutme-body p{white-space:pre-line;margin:0 0 14px}
+.aboutme-body p:last-child{margin-bottom:0}
+@keyframes aboutIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.aboutme-body{animation:none}}
 .about{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .about div{border-top:2px solid var(--acc);padding-top:12px;background:rgba(0,0,0,.3)}
 .about h3{font-size:22px}

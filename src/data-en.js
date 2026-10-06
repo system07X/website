@@ -1,5 +1,25 @@
 import { BRAND, CONTACT_EMAIL } from './data.js'
 
+const aboutMe = `I’m Mathis, a French chef based in Oslo.
+
+I grew up around Nice, where cooking was all about good ingredients, strong flavours and sharing food with people. My journey then took me through different kitchens, from the South of France to Oslo, where I had the chance to work in a Michelin-starred Japanese Omakase kitchen.
+
+That experience changed the way I see cooking.
+
+Japanese cuisine taught me to appreciate ingredients for what they are. Sometimes, the best thing you can do is simply not get in their way. A great piece of fish, a seasonal vegetable, a good sauce — they don’t always need ten other things around them.
+
+At the same time, I never wanted to leave behind the generosity and character I grew up with in French and Mediterranean cooking.
+
+So I’m constantly looking for the balance between the two.
+
+Enough technique to create something special.
+Enough simplicity to let the ingredients speak.
+Enough creativity to make every dish my own.
+
+That’s what I try to bring to my private dinners: thoughtful food, beautiful ingredients, and menus that feel refined without feeling complicated.
+
+For me, cooking is about finding that sweet spot — between simplicity and creativity, precision and instinct, tradition and curiosity.`;
+
 export { BRAND, CONTACT_EMAIL }
 
 export const EXTRAS = [
@@ -20,10 +40,11 @@ export const DISHES = [
 ]
 
 export const UI = {
-  navMenus: 'Menus', navCreations: 'Creations', navHow: 'How it works', navBook: 'Book',
+  navAbout: 'About me', navMenus: 'Menus', navCreations: 'Creations', navHow: 'How it works', navBook: 'Book',
   heroTitle: 'A French Touch to Every Occasion',
   heroText: 'Drawing on a French culinary background and fine-dining experience, I create refined, seasonal menus for private dinners and special occasions - bringing restaurant-level craft, attention to detail and a personal touch to every table',
   heroCta: 'Send a request',
+  aboutTitle: 'About me', aboutText: aboutMe,
   menusTitle: 'The Season, on Your Plate | Fall 2026', menusSub: 'Thoughtfully crafted menus inspired by the best seasonal ingredients, bringing the spirit of a restaurant experience to the comfort of your home.',
   perPerson: 'NOK / pers', choose: 'Choose this menu',
   creationsTitle: 'My creations',

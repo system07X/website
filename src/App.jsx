@@ -13,6 +13,7 @@ export default function App({ content, lang }) {
   const [mode, setMode] = useState('menu')
   const { DISHES, EXTRAS, MENUS, UI } = content
   const [menuId, setMenuId] = useState(MENUS[0].id)
+  const [aboutOpen, setAboutOpen] = useState(false)
 
   function choose(id) {
     setMenuId(id)
@@ -26,6 +27,7 @@ export default function App({ content, lang }) {
       <nav>
         <span className="logo">{BRAND}</span>
         <span>
+          <a href="#aboutme" onClick={() => setAboutOpen(true)}>{UI.navAbout}</a>
           <a href="#menus">{UI.navMenus}</a>
           <a href="#creations">{UI.navCreations}</a>
           <a href="#how">{UI.navHow}</a>
@@ -39,6 +41,15 @@ export default function App({ content, lang }) {
         <p>{UI.heroText}</p>
         <a className="btn" href="#booking">{UI.heroCta}</a>
       </header>
+
+      <section id="aboutme">
+        <details className="aboutme" open={aboutOpen} onToggle={(e) => setAboutOpen(e.currentTarget.open)}>
+          <summary><span>{UI.aboutTitle}</span>{UI.aboutTeaser && <em>{UI.aboutTeaser}</em>}</summary>
+          <div className="aboutme-body">
+            {UI.aboutText.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
+          </div>
+        </details>
+      </section>
 
       <section id="menus">
         <h2>{UI.menusTitle}</h2>
