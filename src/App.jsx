@@ -92,11 +92,13 @@ export default function App({ content, lang }) {
 
       <section id="how">
         <h2>{UI.howTitle}</h2>
-        <div className="about">
+        <p className="sub">{UI.howSub}</p>
+        <ol className="steps">
           {UI.steps.map(([title, text], i) => (
-            <div key={i}><h3>{title}</h3><p>{text}</p></div>
+            <li key={i}><span className="num">{i + 1}</span><h3>{title}</h3><p>{text}</p></li>
           ))}
-        </div>
+        </ol>
+        <p className="how-note">{UI.howNote}</p>
       </section>
 
       <section id="booking">

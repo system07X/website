@@ -59,9 +59,12 @@ figcaption p{margin:4px 0 0;color:var(--mut);font-size:14px}
 .aboutme-body p:last-child{margin-bottom:0}
 @keyframes aboutIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.aboutme-body{animation:none}}
-.about{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.about div{border-top:2px solid var(--acc);padding-top:12px;background:rgba(0,0,0,.3)}
-.about h3{font-size:22px}
+.steps{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));position:relative}
+.steps li{background:var(--card);border:1px solid var(--line);border-top:2px solid var(--acc);border-radius:14px;padding:22px 20px;display:flex;flex-direction:column;gap:8px}
+.steps .num{width:36px;height:36px;border-radius:50%;background:var(--btn);color:#fff;display:grid;place-items:center;font:600 20px 'Cormorant Garamond',Georgia,serif;box-shadow:0 0 0 4px rgba(224,138,111,.2)}
+.steps h3{font-size:24px}
+.steps p{margin:0;color:var(--mut);font-size:15px}
+.how-note{text-align:center;margin:26px 0 0;font:italic 500 22px 'Cormorant Garamond',Georgia,serif;color:var(--acc);text-shadow:0 1px 14px rgba(0,0,0,.6)}
 
 .form{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:14px;grid-template-columns:1fr 1fr}
 .form.ok{display:block}
