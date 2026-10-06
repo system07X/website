@@ -8,8 +8,10 @@ export const EXTRAS = [
 ]
 
 export const MENUS = [
-  { id: 'sp', price: 750, name: 'Spansk inspirasjon', starter: 'Pan con tomate', main: 'Kyllingsupreme med potetmos, hvitløk, chorizo & paprika', dessert: 'Appelsin med kanel' },
-  { id: 'vege', price: 750, name: 'Vegetarianer', starter: 'Tomatcarpaccio', main: 'aubergine og sopp curry', dessert: 'Armriddere & kandisert pære' },
+  { id: 'SH', price: 1500, name: 'Skjørt Høstfall', starter: 'Stekte Kantareller, Langtidsstekt Egg, Parmesan-Krem & Krutonger', main: 'Stekt Andebryst & Rødbete, Sellerirotpuré & Solbærsjy', dessert: 'Sitron-is, Frisk Mynte' },
+  { id: 'FM', price: 1500, name: 'Franske Minner', starter: 'Croque Monsieur, Trøffelsmør, Skinke, Comté-ost', main: 'Biff Bourguignon, Hjemmelaget Potetmos, Glaserte Gulrøtter', dessert: 'Rødbete-Tatin, Frisk Geitost, Valnøtter, Balsamico-reduksjon' },
+  { id: 'FJH', price: 1500, name: 'Fra Jord & Hav', starter: 'Butternut-puré, Chips av Spekeskinke', main: 'Stekt torsk, Grillet Bladgrønt, Beurre Blanc', dessert: 'Crème Brûlée' },
+
 ]
 
 export const DISHES = [
@@ -20,12 +22,12 @@ export const DISHES = [
 
 export const UI = {
   navMenus: 'Menyer', navCreations: 'Kreasjoner', navHow: 'Slik fungerer det', navBook: 'Bestill',
-  heroTitle: 'Privatkokk i Oslo',
-  heroText: 'Restaurantopplevelsen hjemme hos deg. Sesongbaserte råvarer, skreddersydde menyer, middager for 2 til 20 gjester – i Oslo og omegn.',
+  heroTitle: 'Et fransk preg på enhver anledning',
+  heroText: 'Med utgangspunkt i franske mattradisjoner og erfaring fra gourmetrestauranter, komponerer jeg raffinerte, sesongbaserte menyer for private middager og spesielle anledninger - og tilfører hvert måltid håndverk på restaurantnivå, sans for detaljer og et personlig preg',
   heroCta: 'Send en forespørsel',
-  menusTitle: 'Ferdige menyer', menusSub: 'Tre retter til fast pris per person. Legg gjerne til ekstra.',
+  menusTitle: 'Sesongen på tallerkenen | høsten 2026', menusSub: 'Omhyggelig sammensatte menyer, inspirert av de beste sesongråvarene, som bringer følelsen av en restaurantopplevelse hjem til deg',
   perPerson: 'kr / pers', choose: 'Velg denne menyen',
-  creationsTitle: 'Mine kreasjoner', creationsSub: 'Et utvalg retter fra tidligere middager.',
+  creationsTitle: 'Mine kreasjoner',
   howTitle: 'Slik fungerer det',
   steps: [
     ['1. Vi snakker sammen', 'Du forteller om anledning, antall gjester og allergier.'],

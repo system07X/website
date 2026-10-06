@@ -8,8 +8,9 @@ export const EXTRAS = [
 ]
 
 export const MENUS = [
-  { id: 'sp', price: 750, name: 'Spanish inspiration', starter: 'Pan con tomate', main: 'Chicken Supreme with potato purée, garlic, chorizo & paprika', dessert: 'Orange with canel' },
-  { id: 'vege', price: 750, name: 'vegetarian', starter: 'Tomato Carpaccio', main: 'aubergine and mushrooms curry', dessert: 'Brioche French toast & candied pear' },
+  { id: 'DNE', price: 1500, name: 'Delicate Fall', starter: 'Sautéed Chanterelles, Slow-cooked Egg, Parmesan Cream & Croutons', main: 'Roasted Duck Breast & Beetroot, Celeriac Purée & Blackcurrant Jus', dessert: 'Iced Lemon, Fresh Mint' },
+  { id: 'FM', price: 1500, name: 'French Memories', starter: 'Croque Monsieur, Truffle Butter, Ham, Comté Cheese', main: 'Beef Bourguignon, Homemade Mashed Potatoes, Glazed Carrots', dessert: 'Beetroot Tatin, Fresh Goat Cheese, Walnuts, Balsamic Vinegar Reduction' },
+  { id: 'FES', price: 1500, name: 'From Earth & Sea', starter: 'Butternut Purée, Dry Ham Chips', main: 'Roasted Cod, Grilled Leaf, Beure Blanc', dessert: 'Crème Brulée' },
 ]
 
 export const DISHES = [
@@ -20,12 +21,12 @@ export const DISHES = [
 
 export const UI = {
   navMenus: 'Menus', navCreations: 'Creations', navHow: 'How it works', navBook: 'Book',
-  heroTitle: 'Private chef in Oslo',
-  heroText: 'The restaurant experience in your own home. Seasonal ingredients, tailor-made menus, dinners for 2 to 20 guests – in Oslo and surroundings.',
+  heroTitle: 'A French Touch to Every Occasion',
+  heroText: 'Drawing on a French culinary background and fine-dining experience, I create refined, seasonal menus for private dinners and special occasions - bringing restaurant-level craft, attention to detail and a personal touch to every table',
   heroCta: 'Send a request',
-  menusTitle: 'Ready-made menus', menusSub: 'Three courses at a fixed price per person. Add extras if you like.',
+  menusTitle: 'The Season, on Your Plate | Fall 2026', menusSub: 'Thoughtfully crafted menus inspired by the best seasonal ingredients, bringing the spirit of a restaurant experience to the comfort of your home.',
   perPerson: 'NOK / pers', choose: 'Choose this menu',
-  creationsTitle: 'My creations', creationsSub: 'A selection of dishes from past dinners.',
+  creationsTitle: 'My creations',
   howTitle: 'How it works',
   steps: [
     ['1. We talk', 'You tell me the occasion, number of guests and allergies.'],
