@@ -45,13 +45,15 @@ export default function Backdrop() {
 
   return (
     <div className="bg" aria-hidden="true">
-      {tiles.map(({ k, ...pos }) =>
-        PHOTOS.length ? (
-          <img key={k} src={PHOTOS[k % PHOTOS.length]} alt="" style={pos} />
-        ) : (
-          <i key={k} style={{ ...pos, background: FALLBACK[k] }} />
-        )
-      )}
+      <div className="bg-in">
+        {tiles.map(({ k, ...pos }) =>
+          PHOTOS.length ? (
+            <img key={k} src={PHOTOS[k % PHOTOS.length]} alt="" style={pos} />
+          ) : (
+            <i key={k} style={{ ...pos, background: FALLBACK[k] }} />
+          )
+        )}
+      </div>
     </div>
   )
 }
