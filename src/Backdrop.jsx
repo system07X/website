@@ -41,13 +41,10 @@ export default function Backdrop() {
     const t = C.slice(0, n).map(([cx, cy], k) => {
       const s = 0.85 + r() * 0.3, w = cw * fw * s, h = ch * fh * s
       // chaque photo reste entière dans le cadre (pas de rognage)
-      return { k, w, h, left: clamp(cx + (r() - 0.5) * 8 - w / 2, 100 - w), top: clamp(cy + (r() - 0.5) * 8 - h / 2, 100 - h) }
+      r() // jitter horizontal abandonné : on garde la même suite aléatoire pour les positions verticales
+      // photos de la moitié gauche collées à la marge gauche, celles de droite à la marge droite
+      return { k, w, h, left: cx < 50 ? 0 : 100 - w, top: clamp(cy + (r() - 0.5) * 8 - h / 2, 100 - h) }
     })
-    // la photo la plus à gauche s'aligne sur la marge gauche, la plus à droite sur la marge droite
-    const first = t.reduce((a, b) => (b.left < a.left ? b : a))
-    const last = t.reduce((a, b) => (b.left + b.w > a.left + a.w ? b : a))
-    first.left = 0
-    last.left = 100 - last.w
     return t.map(({ k, w, h, left, top }) => ({ k, left: left + '%', top: top + '%', width: w + '%', height: h + '%' }))
   }, [desktop, n])
 
